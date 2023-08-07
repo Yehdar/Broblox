@@ -1,4 +1,45 @@
 p { 
     text-align: left;
+    color: red; 
+    font-size: 40px;
+    margin-left: 50px;
+    bottom: 0px;
+    position: relative;
+    top: 100px;
+    font-family: 'Times New Roman';
     
+}
+
+
+body { 
+    background-color: black;
+}
+
+footer{ 
+
+    text-align: right;
+    color: red;
+    position: relative;
+    top: 500px;
+    left: 700px;
+}
+
+button { 
+    color: red;
+    background-color: black;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+    top: 100px;
+    position: relative;
+    left: 100px;
+}
+
+img { 
+    float: right;
+    object-fit: cover;
+    object-fit: cover;
+
+   
+    height: 400px;
 }
