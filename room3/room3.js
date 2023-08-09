@@ -3,7 +3,9 @@ const userInputButton = document.querySelector(".user-input-button");
 userInputButton.addEventListener("click", () => {
   const userInput = prompt("Enter your input:");
   if (userInput !== null) {
-    alert(You entered: ${userInput});
+    alert("Wrong!");
+  } else {
+    alert("Correct!");
   }
 });
 
