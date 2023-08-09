@@ -1,46 +1,54 @@
-#title { 
-    text-align: center;
-    color: red; 
-    font-size: 40px;
-    margin-left: 50px;
-    bottom: 0px;
-    position: relative;
-    top: 100px;
-    font-family: Times New Roman;
-    border: 3px solid red;
+body {
+  background-color: black;
 }
 
-
-body { 
-    background-color: black;
+.content {
+  flex-wrap: wrap;
+  font-family: "Kaushan Script", cursive;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid yellow;
 }
 
-footer{ 
-
-    text-align: right;
-    color: red;
-    position: relative;
-    top: 500px;
-    left: 700px;
+.textBox {
+  text-align: center;
+  padding: 200px;
+  max-width: 500px;
+  border: 3px solid yellow;
 }
 
-button { 
-    color: red;
-    background-color: black;
-    margin-top: 100px;
-    margin-left: 100px;
-    font-size: 30px;
-    top: 100px;
-    position: relative;
-    left: 100px;
-    border: 3px solid red;
+.textBox h2 {
+  color: #fff;
+  font-size: 6em;
+  line-height: 1.4em;
+  font-weight: 500;
+  border: 3px solid yellow;
 }
 
-img { 
-    float: right;
-    object-fit: cover;
-    object-fit: cover;
+.btn {
+  color: red;
+  background-color: black;
+  font-size: 30px;
+  position: relative;
+  padding: 10px;
+  padding-left: 100px;
+  text-decoration: none;
+  padding-right: 100px;
+  border: 3px solid red;
+}
 
-   border: 5px solid red;
-    height: 400px;
+img {
+  float: right;
+  height: 50%;
+  width: 50%;
+  border: 3px solid red;
+}
+
+footer {
+  text-align: right;
+  color: white;
+  border: 3px solid yellow;
 }
