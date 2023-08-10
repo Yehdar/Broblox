@@ -76,6 +76,10 @@ body {
   background-color: grey;
 }
 
+#button2 , #button3{ 
+  background-color: orange;
+}
+
 .green {
   background-color: green;
 }
