@@ -46,7 +46,7 @@ body {
 .screen {
   width: 100%;
   height: 90%;
-  background-color: grey;
+  background-color: black;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -54,9 +54,12 @@ body {
   align-items: center;
 }
 
-.emoji {
-  font-size: 10rem;
-  padding: 15px;
+.light1,
+.light2,
+.light3 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
 }
 
 /* INSIDE THE TV GAMES END */
@@ -74,10 +77,6 @@ body {
   height: 15px;
   border-radius: 50%;
   background-color: grey;
-}
-
-#button2 , #button3{ 
-  background-color: orange;
 }
 
 .green {
@@ -169,11 +168,4 @@ body {
   bottom: 5%;
   right: 5%;
   display: none;
-}
-
-.light1 , .light2 , .light3 { 
-  height: 150px;
-  width: 150px;
-  border-radius: 50px;
-
 }
