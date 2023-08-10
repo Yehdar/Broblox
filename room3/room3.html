@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="room3.css" />
+    <script src="room3.js"></script>
     <title>Room Three</title>
   </head>
   <body>
@@ -26,7 +27,12 @@
             onmouseout="originalEmoji1()"
             class="emoji"
           >
-            😊
+            <img
+              class="light1"
+              id="light1"
+              src="room3images/lightoff.jpg"
+              alt=""
+            />
           </div>
           <div
             id="2"
@@ -34,7 +40,12 @@
             onmouseout="originalEmoji2()"
             class="emoji"
           >
-            😊
+            <img
+              class="light2"
+              id="light2"
+              src="room3images/lightoff.jpg"
+              alt=""
+            />
           </div>
           <div
             id="3"
@@ -42,23 +53,12 @@
             onmouseout="originalEmoji3()"
             class="emoji"
           >
-            😊
-          </div>
-          <div
-            id="4"
-            onmouseover="changeEmoji4()"
-            onmouseout="originalEmoji4()"
-            class="emoji"
-          >
-            😊
-          </div>
-          <div
-            id="5"
-            onmouseover="changeEmoji5()"
-            onmouseout="originalEmoji5()"
-            class="emoji"
-          >
-            😊
+            <img
+              class="light3"
+              id="light3"
+              src="room3images/lightoff.jpg"
+              alt=""
+            />
           </div>
         </div>
         <div class="body">
@@ -72,10 +72,7 @@
           <div class="antenna"></div>
           <div class="stand"></div>
         </div>
-        <p>
-          Here are your friends. One of them has covid. Tell me who and I will
-          let you live.
-        </p>
+        <p>Choose the light to light up your path...</p>
       </div>
       <div class="table">
         <div id="lightbox" class="center-box"><p></p></div>

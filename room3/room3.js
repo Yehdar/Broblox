@@ -1,5 +1,5 @@
 // ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.ceil(Math.random() * 5);
+var rng = Math.ceil(Math.random() * 4);
 // EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
 
 // eyeballs
@@ -51,55 +51,34 @@ hintButton.addEventListener("click", () => {
 // ACTUAL QUESTION
 function changeEmoji1() {
   if (rng == 1) {
-    document.getElementById("1").innerHTML = "🤒";
+    document.getElementById("light1").setAttribute('src','room3images/lighton.jpg');
   } else {
-    document.getElementById("1").innerHTML = "😠";
+    document.getElementById("light1").setAttribute('src','room3images/lightoff.jpg' );
   }
 }
 function originalEmoji1() {
-  document.getElementById("1").innerHTML = "😊";
+  document.getElementById("light1").setAttribute('src','room3images/lightoff.jpg' );
 }
 
 function changeEmoji2() {
   if (rng == 2) {
-    document.getElementById("2").innerHTML = "🤒";
+    document.getElementById("light2").setAttribute('src','room3images/lighton.jpg');
   } else {
-    document.getElementById("2").innerHTML = "😠";
+    document.getElementById("light2").setAttribute('src','room3images/lightoff.jpg');
   }
 }
 function originalEmoji2() {
-  document.getElementById("2").innerHTML = "😊";
+  document.getElementById("light2").setAttribute('src','room3images/lightoff.jpg');
 }
 
 function changeEmoji3() {
   if (rng == 3) {
-    document.getElementById("3").innerHTML = "🤒";
+    document.getElementById("light3").setAttribute('src','room3images/lighton.jpg');
   } else {
-    document.getElementById("3").innerHTML = "😠";
+    document.getElementById("light3").setAttribute('src','room3images/lightoff.jpg');
   }
 }
 function originalEmoji3() {
-  document.getElementById("3").innerHTML = "😊";
+  document.getElementById("light3").setAttribute('src','room3images/lightoff.jpg');
 }
 
-function changeEmoji4() {
-  if (rng == 4) {
-    document.getElementById("4").innerHTML = "🤒";
-  } else {
-    document.getElementById("4").innerHTML = "😠";
-  }
-}
-function originalEmoji4() {
-  document.getElementById("4").innerHTML = "😊";
-}
-
-function changeEmoji5() {
-  if (rng == 5) {
-    document.getElementById("5").innerHTML = "🤒";
-  } else {
-    document.getElementById("5").innerHTML = "😠";
-  }
-}
-function originalEmoji5() {
-  document.getElementById("5").innerHTML = "😊";
-}
