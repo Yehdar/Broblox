@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="room5.css">
-  <title>Room Five</title>
-</head>
-<body>
-  <div class="setup">
-    <div class="tv">
-      <div class="screen">
-        <div class="content"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="room5.css" />
+    <title>Room Five</title>
+  </head>
+  <body>
+    <div id="anchor" class="setup">
+      <div class="eyes">
+        <img
+          class="eye"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreesvg.org%2Fimg%2FFX13_eyeball.png&f=1&nofb=1&ipt=173f393e854c8a57eb1dc6ea9eff3b28710af6adf4ef32fc44c429f991ae69e1&ipo=images"
+        />
+        <img
+          class="eye"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreesvg.org%2Fimg%2FFX13_eyeball.png&f=1&nofb=1&ipt=173f393e854c8a57eb1dc6ea9eff3b28710af6adf4ef32fc44c429f991ae69e1&ipo=images"
+        />
       </div>
-      <div class="body">
-        <div class="buttons">
-          <div class="button green"></div>
-          <div class="button red"></div>
-          <div class="button grey"></div>
-          <div class="button grey"></div>
-          <div class="button grey"></div>
+      <div class="tv">
+        <div class="screen">
+          <div
+            id="1"
+            onmouseover="changeEmoji1()"
+            onmouseout="originalEmoji1()"
+            class="emoji"
+          >
+            😊
+          </div>
+          <div
+            id="2"
+            onmouseover="changeEmoji2()"
+            onmouseout="originalEmoji2()"
+            class="emoji"
+          >
+            😊
+          </div>
+          <div
+            id="3"
+            onmouseover="changeEmoji3()"
+            onmouseout="originalEmoji3()"
+            class="emoji"
+          >
+            😊
+          </div>
+          <div
+            id="4"
+            onmouseover="changeEmoji4()"
+            onmouseout="originalEmoji4()"
+            class="emoji"
+          >
+            😊
+          </div>
+          <div
+            id="5"
+            onmouseover="changeEmoji5()"
+            onmouseout="originalEmoji5()"
+            class="emoji"
+          >
+            😊
+          </div>
         </div>
-        <div class="antenna"></div>
-        <div class="stand"></div>
+        <div class="body">
+          <div class="buttons">
+            <div class="button red"></div>
+            <div class="button grey"></div>
+            <div class="button grey"></div>
+            <div class="button grey"></div>
+            <div class="button grey"></div>
+          </div>
+          <div class="antenna"></div>
+          <div class="stand"></div>
+        </div>
+        <p>
+          Here are your friends. One of them has covid. Tell me who and I will
+          let you live.
+        </p>
       </div>
-      <p>[question]</p>
+      <div class="table">
+        <div id="lightbox" class="center-box"><p></p></div>
+      </div>
     </div>
-    <div class="table">
-      <div class="center-box"><p>nun</p></div>
-    </div>
-  </div>
-  <button class="user-input-button">Get User Input</button>
-  <button class="hint-button">Hint</button>
-  <script src="room5.js"></script>
-</body>
+    <button class="user-input-button">Answer Here</button>
+    <button class="hint-button">Ask Hint Here</button>
+    <a href="https://google.com">
+      <img
+        id="arrow"
+        class="arrow"
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Farrow-images-17.png&f=1&nofb=1&ipt=8c8fb89d756245b32b507672e8088521b6dc6cd91e1e7c7f6ec67809c4a7747f&ipo=images"
+      />
+    </a>
+    <script src="room5.js"></script>
+  </body>
 </html>
