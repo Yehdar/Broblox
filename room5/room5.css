@@ -37,16 +37,22 @@ body {
   margin-bottom: -100px; /* Remove gap between TV and table */
 }
 
+#riddle { 
+  width: 600px;
+  height: 500px;
+}
+
 .tv p {
   color: white;
   text-align: center;
+  
 }
 
 /* INSIDE THE TV GAMES START */
 .screen {
   width: 100%;
   height: 90%;
-  background-color: grey;
+  background-color: black;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
