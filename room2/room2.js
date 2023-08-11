@@ -1,5 +1,15 @@
 // ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.ceil(Math.random() * 5);
+var hitCellCoordinates = [];
+
+for (var i = 0; i < Math.ceil(Math.random() * 20); i++) {
+  hitCellCoordinates.push({
+    row: Math.ceil(Math.random() * 9),
+    col: Math.ceil(Math.random() * 9),
+  });
+}
+
+var rng = hitCellCoordinates.length;
+
 // EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
 
 // eyeballs
@@ -45,61 +55,29 @@ userInputButton.addEventListener("click", () => {
 // hint button
 const hintButton = document.querySelector(".hint-button");
 hintButton.addEventListener("click", () => {
-  alert("Hover over the emojis!");
+  alert("Hover over the grass SLOWLY!");
 });
 
 // ACTUAL QUESTION
-function changeEmoji1() {
-  if (rng == 1) {
-    document.getElementById("1").innerHTML = "🤒";
-  } else {
-    document.getElementById("1").innerHTML = "😠";
-  }
-}
-function originalEmoji1() {
-  document.getElementById("1").innerHTML = "😊";
-}
+const screenElement = document.querySelector(".screen");
+const numRows = 10;
+const numCols = 10;
 
-function changeEmoji2() {
-  if (rng == 2) {
-    document.getElementById("2").innerHTML = "🤒";
-  } else {
-    document.getElementById("2").innerHTML = "😠";
-  }
-}
-function originalEmoji2() {
-  document.getElementById("2").innerHTML = "😊";
-}
+for (let row = 0; row < numRows; row++) {
+  for (let col = 0; col < numCols; col++) {
+    const cell = document.createElement("div");
+    cell.classList.add("cell");
 
-function changeEmoji3() {
-  if (rng == 3) {
-    document.getElementById("3").innerHTML = "🤒";
-  } else {
-    document.getElementById("3").innerHTML = "😠";
-  }
-}
-function originalEmoji3() {
-  document.getElementById("3").innerHTML = "😊";
-}
+    const isHit = hitCellCoordinates.some(
+      (coord) => coord.row === row && coord.col === col
+    );
 
-function changeEmoji4() {
-  if (rng == 4) {
-    document.getElementById("4").innerHTML = "🤒";
-  } else {
-    document.getElementById("4").innerHTML = "😠";
-  }
-}
-function originalEmoji4() {
-  document.getElementById("4").innerHTML = "😊";
-}
+    cell.addEventListener("mouseover", () => {
+      if (isHit) {
+        cell.classList.add("ship");
+      }
+    });
 
-function changeEmoji5() {
-  if (rng == 5) {
-    document.getElementById("5").innerHTML = "🤒";
-  } else {
-    document.getElementById("5").innerHTML = "😠";
+    screenElement.appendChild(cell);
   }
-}
-function originalEmoji5() {
-  document.getElementById("5").innerHTML = "😊";
 }
