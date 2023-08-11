@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+  }
+  
+  .content {
+    flex-wrap: wrap;
+    font-family: "Kaushan Script", cursive;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid yellow;
+  }
+  
+  .textBox {
+    text-align: center;
+    padding: 200px;
+    max-width: 500px;
+    border: 3px solid yellow;
+  }
+  
+  .textBox h2 {
+    color: #fff;
+    font-size: 6em;
+    line-height: 1.4em;
+    font-weight: 500;
+    border: 3px solid yellow;
+  }
+  
+  .btn {
+    color: red;
+    background-color: black;
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    padding-left: 100px;
+    text-decoration: none;
+    padding-right: 100px;
+    border: 3px solid red;
+  }
+  
+  img {
+    float: right;
+    height: 50%;
+    width: 50%;
+    border: 3px solid red;
+  }
+  
+  footer {
+    text-align: right;
+    color: white;
+    border: 3px solid yellow;
+  }
+  
