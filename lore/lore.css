@@ -1,12 +1,27 @@
 body {
   background-color: black;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig04.deviantart.net%2F6b88%2Ff%2F2014%2F247%2F7%2F1%2Funtitled_drawing_by_crystal_wise-d7xxyzx.png&f=1&nofb=1&ipt=788fbc08a869885eda2b7e03ffb10788df6d26b08d381dc5a2c83c01c8866cb9&ipo=images);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
 p {
   color: white;
   text-align: center;
+  font-size: 24px;
+  line-height: 3;
+  margin: 10px;
 }
 
-footer {
-  color: white;
+.arrow {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 }
