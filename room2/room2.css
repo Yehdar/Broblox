@@ -49,14 +49,26 @@ body {
   background-color: grey;
   border-radius: 10px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid; /* Use CSS Grid for the grid layout */
+  grid-template-columns: repeat(10, 1fr); /* Create 10 columns */
+  grid-template-rows: repeat(10, 1fr); /* Create 10 rows */
 }
 
-.emoji {
-  font-size: 10rem;
-  padding: 15px;
+/* Style for grid cells (representing potential ship locations) */
+.cell {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-2i1JXzGtZUY%2FUCUG0rS7b9I%2FAAAAAAAAAds%2FzHqmzLc37OI%2Fs1600%2Fbuffalo%2Bgrass%2Bcloseup.JPG&f=1&nofb=1&ipt=021c5bf0e20eef39974ba0e3c362bf70875f7a7b5bc1a12d80197aa5df3343e9&ipo=images");
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Style for cells representing placed ships */
+.ship {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Fe0%2F385188343_monkey.jpg&f=1&nofb=1&ipt=c1c6a3e2b1fc5aa87d60f4b1102e7ca2161d9581345e721d12df05128fb01dc5&ipo=images");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
 }
 
 /* INSIDE THE TV GAMES END */

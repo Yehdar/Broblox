@@ -47,16 +47,15 @@ body {
   width: 100%;
   height: 90%;
   background-color: grey;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fbd%2Ff8%2F51%2Fbdf8519332d081b7185c48a04d293d3b.jpg&f=1&nofb=1&ipt=6aea744cfdc2f6d021206850920a7d1cc50a570da8f6bf1cd689443396832c86&ipo=images);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 25%;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.emoji {
-  font-size: 10rem;
-  padding: 15px;
 }
 
 /* INSIDE THE TV GAMES END */

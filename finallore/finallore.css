@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F743%2F743905.jpg&f=1&nofb=1&ipt=57d6135e0e0b7eb4a01b3e68e913b2991f9205f715db1160a215b922811686d5&ipo=images);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px; /* Add some spacing below the header */
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 3;
+  margin: 10px;
+}
+
+.arrow {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}

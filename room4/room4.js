@@ -1,5 +1,5 @@
 // ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.ceil(Math.random() * 5);
+var rng = Math.ceil(Math.random() * 100);
 // EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
 
 // eyeballs
@@ -40,66 +40,21 @@ userInputButton.addEventListener("click", () => {
     document.getElementById("lightbox").style.backgroundColor = "green";
     document.getElementById("arrow").style.display = "block";
   }
+  if (userInput > rng) {
+    document.getElementById("question").innerHTML =
+      "Your guess, " + userInput + ", is too high";
+  } else if (userInput < rng) {
+    document.getElementById("question").innerHTML =
+      "Your guess, " + userInput + ", is too low";
+  } else {
+    document.getElementById("question").innerHTML = "Dang it, you got it";
+  }
 });
 
 // hint button
 const hintButton = document.querySelector(".hint-button");
 hintButton.addEventListener("click", () => {
-  alert("Hover over the emojis!");
+  alert("Keep talking to her!");
 });
 
 // ACTUAL QUESTION
-function changeEmoji1() {
-  if (rng == 1) {
-    document.getElementById("1").innerHTML = "🤒";
-  } else {
-    document.getElementById("1").innerHTML = "😠";
-  }
-}
-function originalEmoji1() {
-  document.getElementById("1").innerHTML = "😊";
-}
-
-function changeEmoji2() {
-  if (rng == 2) {
-    document.getElementById("2").innerHTML = "🤒";
-  } else {
-    document.getElementById("2").innerHTML = "😠";
-  }
-}
-function originalEmoji2() {
-  document.getElementById("2").innerHTML = "😊";
-}
-
-function changeEmoji3() {
-  if (rng == 3) {
-    document.getElementById("3").innerHTML = "🤒";
-  } else {
-    document.getElementById("3").innerHTML = "😠";
-  }
-}
-function originalEmoji3() {
-  document.getElementById("3").innerHTML = "😊";
-}
-
-function changeEmoji4() {
-  if (rng == 4) {
-    document.getElementById("4").innerHTML = "🤒";
-  } else {
-    document.getElementById("4").innerHTML = "😠";
-  }
-}
-function originalEmoji4() {
-  document.getElementById("4").innerHTML = "😊";
-}
-
-function changeEmoji5() {
-  if (rng == 5) {
-    document.getElementById("5").innerHTML = "🤒";
-  } else {
-    document.getElementById("5").innerHTML = "😠";
-  }
-}
-function originalEmoji5() {
-  document.getElementById("5").innerHTML = "😊";
-}
