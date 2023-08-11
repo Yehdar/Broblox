@@ -1,5 +1,5 @@
 // ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.ceil(Math.random() * 3);
+var rng = Math.ceil(Math.random() * 4);
 // EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
 
 // eyeballs
@@ -33,10 +33,10 @@ const userInputButton = document.querySelector(".user-input-button");
 userInputButton.addEventListener("click", () => {
   const userInput = prompt("Enter your input:");
   if (userInput != rng) {
-    alert("Wrong!");
+    alert("Wrong! Don't get lost in the dark.");
     document.getElementById("lightbox").style.backgroundColor = "red";
   } else {
-    alert("Correct!");
+    alert("Correct! Onto the next challange.");
     document.getElementById("lightbox").style.backgroundColor = "green";
     document.getElementById("arrow").style.display = "block";
   }
@@ -45,7 +45,7 @@ userInputButton.addEventListener("click", () => {
 // hint button
 const hintButton = document.querySelector(".hint-button");
 hintButton.addEventListener("click", () => {
-  alert("Hover over the emojis!");
+  alert("Check Each Light bulb.");
 });
 
 // ACTUAL QUESTION
