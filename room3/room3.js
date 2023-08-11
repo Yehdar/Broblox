@@ -1,5 +1,5 @@
 // ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.floor((Math.random() * 4)+1);
+var rng = Math.ceil(Math.random() * 3);
 // EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
 
 // eyeballs
