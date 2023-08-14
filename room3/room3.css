@@ -4,8 +4,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("https://i.pinimg.com/originals/ba/07/95/ba0795b0317f43bcda2a8bfd33ce347d.jpg");
-  background-size: cover; /* <------ */
+  background-image: url("../imgs/rooms/rainBg.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .eye {
   rotate: 30deg;
-  width: 25%; /* Resize to 25% of their original size */
+  width: 25%;
 }
 
 .setup {
@@ -34,7 +34,7 @@ body {
   border: 10px solid #555;
   border-radius: 15px;
   position: relative;
-  margin-bottom: -100px; /* Remove gap between TV and table */
+  margin-bottom: -100px;
 }
 
 .tv p {
@@ -79,7 +79,8 @@ body {
   background-color: grey;
 }
 
-#button2 , #button3{ 
+#button2,
+#button3 {
   background-color: orange;
 }
 
@@ -117,9 +118,9 @@ body {
 }
 
 .table {
-  background-image: url("https://st.depositphotos.com/1779253/4283/i/450/depositphotos_42835161-Big-dark-wood-plank-wall-texture-background.jpg");
+  background-image: url("../imgs/rooms/woodBg.webp");
   width: 140%;
-  height: 24vh; /* Table now takes up 20% of the screen from the bottom */
+  height: 24vh;
   margin-bottom: -120px;
 }
 
@@ -129,7 +130,7 @@ body {
   background-color: grey;
   border: 2px solid black;
   position: absolute;
-  bottom: 3%; /* Adjust the positioning */
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -141,8 +142,8 @@ body {
 
 .user-input-button {
   position: absolute;
-  bottom: 5%; /* Position the button at the bottom of the screen */
-  left: 13%; /* Position the button at the left of the screen */
+  bottom: 5%;
+  left: 13%;
   padding: 10px 20px;
   background-color: navy;
   border: 2px solid black;

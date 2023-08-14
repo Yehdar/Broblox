@@ -1,16 +1,17 @@
-// ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var hitCellCoordinates = [];
+let rng;
+let hitCellCoordinates;
 
-for (var i = 0; i < Math.ceil(Math.random() * 20); i++) {
-  hitCellCoordinates.push({
-    row: Math.ceil(Math.random() * 9),
-    col: Math.ceil(Math.random() * 9),
+fetch("http://localhost:3000/ansArr")
+  .then((response) => response.json())
+  .then((data) => {
+    const ansArr = data;
+    rng = ansArr[1];
+    hitCellCoordinates = ansArr[5];
+    initializeGrid(hitCellCoordinates);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
   });
-}
-
-var rng = hitCellCoordinates.length;
-
-// EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
 
 // eyeballs
 document.addEventListener("mousemove", (e) => {
@@ -59,25 +60,27 @@ hintButton.addEventListener("click", () => {
 });
 
 // ACTUAL QUESTION
-const screenElement = document.querySelector(".screen");
-const numRows = 10;
-const numCols = 10;
+function initializeGrid(hitCellCoordinates) {
+  const screenElement = document.querySelector(".screen");
+  const numRows = 10;
+  const numCols = 10;
 
-for (let row = 0; row < numRows; row++) {
-  for (let col = 0; col < numCols; col++) {
-    const cell = document.createElement("div");
-    cell.classList.add("cell");
+  for (let row = 0; row < numRows; row++) {
+    for (let col = 0; col < numCols; col++) {
+      const cell = document.createElement("div");
+      cell.classList.add("cell");
 
-    const isHit = hitCellCoordinates.some(
-      (coord) => coord.row === row && coord.col === col
-    );
+      const isHit = hitCellCoordinates.some(
+        (coord) => coord.row === row && coord.col === col
+      );
 
-    cell.addEventListener("mouseover", () => {
-      if (isHit) {
-        cell.classList.add("ship");
-      }
-    });
+      cell.addEventListener("mouseover", () => {
+        if (isHit) {
+          cell.classList.add("ship");
+        }
+      });
 
-    screenElement.appendChild(cell);
+      screenElement.appendChild(cell);
+    }
   }
 }

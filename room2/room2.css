@@ -4,8 +4,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("https://i.pinimg.com/originals/ba/07/95/ba0795b0317f43bcda2a8bfd33ce347d.jpg");
-  background-size: cover; /* <------ */
+  background-image: url("../imgs/rooms/rainBg.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .eye {
   rotate: 30deg;
-  width: 25%; /* Resize to 25% of their original size */
+  width: 25%;
 }
 
 .setup {
@@ -34,7 +34,7 @@ body {
   border: 10px solid #555;
   border-radius: 15px;
   position: relative;
-  margin-bottom: -100px; /* Remove gap between TV and table */
+  margin-bottom: -100px;
 }
 
 .tv p {
@@ -49,25 +49,23 @@ body {
   background-color: grey;
   border-radius: 10px;
   overflow: hidden;
-  display: grid; /* Use CSS Grid for the grid layout */
-  grid-template-columns: repeat(10, 1fr); /* Create 10 columns */
-  grid-template-rows: repeat(10, 1fr); /* Create 10 rows */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
 
-/* Style for grid cells (representing potential ship locations) */
 .cell {
   width: 100%;
   height: 100%;
   border: 1px solid black;
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-2i1JXzGtZUY%2FUCUG0rS7b9I%2FAAAAAAAAAds%2FzHqmzLc37OI%2Fs1600%2Fbuffalo%2Bgrass%2Bcloseup.JPG&f=1&nofb=1&ipt=021c5bf0e20eef39974ba0e3c362bf70875f7a7b5bc1a12d80197aa5df3343e9&ipo=images");
+  background-image: url("../imgs/rooms/grass.jpeg");
   box-sizing: border-box;
   cursor: pointer;
 }
 
-/* Style for cells representing placed ships */
 .ship {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Fe0%2F385188343_monkey.jpg&f=1&nofb=1&ipt=c1c6a3e2b1fc5aa87d60f4b1102e7ca2161d9581345e721d12df05128fb01dc5&ipo=images");
-  background-size: cover; /* <------ */
+  background-image: url("../imgs/rooms/monke.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -122,9 +120,9 @@ body {
 }
 
 .table {
-  background-image: url("https://st.depositphotos.com/1779253/4283/i/450/depositphotos_42835161-Big-dark-wood-plank-wall-texture-background.jpg");
+  background-image: url("../imgs/rooms/woodBg.webp");
   width: 140%;
-  height: 24vh; /* Table now takes up 20% of the screen from the bottom */
+  height: 24vh;
   margin-bottom: -120px;
 }
 
@@ -134,7 +132,7 @@ body {
   background-color: grey;
   border: 2px solid black;
   position: absolute;
-  bottom: 3%; /* Adjust the positioning */
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -146,8 +144,8 @@ body {
 
 .user-input-button {
   position: absolute;
-  bottom: 5%; /* Position the button at the bottom of the screen */
-  left: 13%; /* Position the button at the left of the screen */
+  bottom: 5%;
+  left: 13%;
   padding: 10px 20px;
   background-color: navy;
   border: 2px solid black;

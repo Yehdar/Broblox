@@ -1,6 +1,14 @@
-// ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.ceil(Math.random() * 5);
-// EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
+let rng;
+
+fetch("http://localhost:3000/ansArr")
+  .then((response) => response.json())
+  .then((data) => {
+    const ansArr = data;
+    rng = ansArr[4];
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 // eyeballs
 document.addEventListener("mousemove", (e) => {
@@ -32,10 +40,9 @@ function angle(cx, cy, ex, ey) {
 const userInputButton = document.querySelector(".user-input-button");
 userInputButton.addEventListener("click", () => {
   const userInput = prompt("Enter your input:");
- 
-  if (userInput != "Batman") {
-    
-    alert("Wrong!"  );
+
+  if (userInput != rng) {
+    alert("Wrong!");
     document.getElementById("lightbox").style.backgroundColor = "red";
   } else {
     alert("Correct!");
@@ -47,5 +54,5 @@ userInputButton.addEventListener("click", () => {
 // hint button
 const hintButton = document.querySelector(".hint-button");
 hintButton.addEventListener("click", () => {
-  alert("I am the shadows..");
+  alert("I am the shadows.. and answer with first letter capital!");
 });

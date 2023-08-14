@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F743%2F743905.jpg&f=1&nofb=1&ipt=57d6135e0e0b7eb4a01b3e68e913b2991f9205f715db1160a215b922811686d5&ipo=images);
+  background-image: url("../imgs/lore/spookyHouse.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

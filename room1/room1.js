@@ -1,6 +1,14 @@
-// ANSWERS WILL BE HERE. THEY WILL BE EXPORTED FROM A SERVER
-var rng = Math.ceil(Math.random() * 5);
-// EVERYTHING ABOVE WILL BE TRANSFERRED TO SERVER FILE LATERRRRRRRRR
+let rng;
+
+fetch("http://localhost:3000/ansArr")
+  .then((response) => response.json())
+  .then((data) => {
+    const ansArr = data;
+    rng = ansArr[0];
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 // eyeballs
 document.addEventListener("mousemove", (e) => {
