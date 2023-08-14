@@ -2,10 +2,19 @@
 var hitCellCoordinates = [];
 
 for (var i = 0; i < Math.ceil(Math.random() * 20); i++) {
-  hitCellCoordinates.push({
-    row: Math.ceil(Math.random() * 9),
-    col: Math.ceil(Math.random() * 9),
-  });
+  let newCoord;
+  do {
+    newCoord = {
+      row: Math.ceil(Math.random() * 9),
+      col: Math.ceil(Math.random() * 9),
+    };
+  } while (
+    hitCellCoordinates.some(
+      (coord) => coord.row === newCoord.row && coord.col === newCoord.col
+    )
+  );
+
+  hitCellCoordinates.push(newCoord);
 }
 
 var rng = hitCellCoordinates.length;

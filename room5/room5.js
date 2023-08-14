@@ -32,10 +32,9 @@ function angle(cx, cy, ex, ey) {
 const userInputButton = document.querySelector(".user-input-button");
 userInputButton.addEventListener("click", () => {
   const userInput = prompt("Enter your input:");
- 
+
   if (userInput != "Batman") {
-    
-    alert("Wrong!"  );
+    alert("Wrong!");
     document.getElementById("lightbox").style.backgroundColor = "red";
   } else {
     alert("Correct!");
@@ -47,5 +46,5 @@ userInputButton.addEventListener("click", () => {
 // hint button
 const hintButton = document.querySelector(".hint-button");
 hintButton.addEventListener("click", () => {
-  alert("I am the shadows..");
+  alert("I am the shadows.. and answer with first letter capital!");
 });
